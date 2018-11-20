@@ -3,7 +3,7 @@ Eureka server相比于Zookeeper每个节点是平等的，侧重CAP原则中的A
 ### 一、DEMO实现了以下功能：
  * 多eureka server互相注册实现高可用
  * 整合Ribbon实现负载均衡
- * Feign 使用（带集成）
+ * Feign 实现声明式Rest调用（带集成）
  * Zuul网关（带集成）
  
 ### 二、单机测试
