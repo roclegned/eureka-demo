@@ -12,6 +12,22 @@ Eureka server相比于Zookeeper每个节点是平等的，侧重CAP原则中的A
   java -jar eureka-server-1.0-SNAPSHOT.jar --spring.profiles.active=peer1 
   java -jar eureka-server-1.0-SNAPSHOT.jar --spring.profiles.active=peer2
   ```
+  + 开启两个provider
+  ```
+  java -jar simple-provider-1.0-SNAPSHOT.jar  默认8000 端口
+  java -jar simple-provider-1.0-SNAPSHOT.jar --server.prot=8001 
+  ```
+  + 启动consumer测试
+  `java -jar simple-consumer-1.0-SNAPSHOT.jar  `
+  > 访问 http://localhost:8010/log-instance 尝试多次刷新网页
+  ``` 控制台输出
+   2018-11-20 22:15:36.913  INFO 51772 : simple-user-provider:172.17.5.160:8001
+   2018-11-20 22:15:37.184  INFO 51772 : simple-user-provider:172.17.5.160:8000
+   2018-11-20 22:15:37.404  INFO 51772 : simple-user-provider:172.17.5.160:8001
+   2018-11-20 22:15:37.608  INFO 51772 : simple-user-provider:172.17.5.160:8000
+   2018-11-20 22:15:37.800  INFO 51772 : simple-user-provider:172.17.5.160:8001
+   2018-11-20 22:15:38.023  INFO 51772 : simple-user-provider:172.17.5.160:8000
+```
   
  
  
