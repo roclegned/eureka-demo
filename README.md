@@ -3,6 +3,7 @@
 ### 一、DEMO实现了以下功能：
  * 多eureka server互相注册实现高可用
  * 整合Ribbon实现负载均衡
+ * 持续更新中...
  
 ### 二、单机部署
   + 修改注意host文件，windows下修改`C:\Windows\System32\drivers\etc\hosts` 文件，添加 `127.0.0.1       peer1 peer2`
