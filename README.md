@@ -19,8 +19,8 @@ Eureka server相比于Zookeeper每个节点是平等的，侧重CAP原则中的A
   ```
   + 启动consumer测试
   `java -jar simple-consumer-1.0-SNAPSHOT.jar  `
-  > 访问 http://localhost:8010/log-instance 尝试多次刷新网页
-  ``` 控制台输出
+  > 访问 http://localhost:8010/log-instance 尝试多次刷新网页，控制台输出如下
+  ``` 
    2018-11-20 22:15:36.913  INFO 51772 : simple-user-provider:172.17.5.160:8001
    2018-11-20 22:15:37.184  INFO 51772 : simple-user-provider:172.17.5.160:8000
    2018-11-20 22:15:37.404  INFO 51772 : simple-user-provider:172.17.5.160:8001
@@ -28,7 +28,15 @@ Eureka server相比于Zookeeper每个节点是平等的，侧重CAP原则中的A
    2018-11-20 22:15:37.800  INFO 51772 : simple-user-provider:172.17.5.160:8001
    2018-11-20 22:15:38.023  INFO 51772 : simple-user-provider:172.17.5.160:8000
 ```
-  
+ > 尝试停止一台Eureka Server再次访问http://localhost:8010/log-instance 多次刷新，控制台输出如下
+``` 
+    2018-11-20 22:26:30.694  INFO 51772 : simple-user-provider:172.17.5.160:8000
+    2018-11-20 22:26:30.882  INFO 51772 : simple-user-provider:172.17.5.160:8001
+    2018-11-20 22:26:31.065  INFO 51772 : simple-user-provider:172.17.5.160:8000
+    2018-11-20 22:26:31.239  INFO 51772 : simple-user-provider:172.17.5.160:8001
+    2018-11-20 22:26:31.407  INFO 51772 : simple-user-provider:172.17.5.160:8000
+    2018-11-20 22:26:31.588  INFO 51772 : simple-user-provider:172.17.5.160:8001
+```
  
  
  
