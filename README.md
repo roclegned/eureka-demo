@@ -15,7 +15,7 @@ Eureka server相比于Zookeeper每个节点是平等的，侧重CAP原则中的A
   + 开启两个provider
   ```
   java -jar simple-provider-1.0-SNAPSHOT.jar  默认8000 端口
-  java -jar simple-provider-1.0-SNAPSHOT.jar --server.prot=8001 
+  java -jar simple-provider-1.0-SNAPSHOT.jar --server.port=8001 
   ```
   + 启动consumer测试
   `java -jar simple-consumer-1.0-SNAPSHOT.jar  `
