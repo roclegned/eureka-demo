@@ -7,3 +7,5 @@
 *.iml
 out
 gen
+/eureka-server/target/
+/simple-provider/target/
