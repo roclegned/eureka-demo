@@ -1,5 +1,5 @@
 # eureka-demo
-## Eureka server相比于Zookeeper每个节点是平等的，侧重CAP原则中的Availability（可用性）
+Eureka server相比于Zookeeper每个节点是平等的，侧重CAP原则中的Availability（可用性）
 ### 一、DEMO实现了以下功能：
  * 多eureka server互相注册实现高可用
  * 整合Ribbon实现负载均衡
