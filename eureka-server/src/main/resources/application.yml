@@ -1,0 +1,30 @@
+---
+  # 指定profile=peer1
+spring:
+  profiles: peer1
+  application:
+      name: eureka-server-A
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:8762/eureka/
+
+---
+ # 指定profile=peer1
+spring:
+  profiles: peer2
+  application:
+      name: eureka-server-B
+server:
+  port: 8762
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/
+
