@@ -1,8 +1,15 @@
 server:
-  port: 8010
+  port: 8011
 
 spring:
   application:
     name: simple-user-consumer
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/
+
 
 
