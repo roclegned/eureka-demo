@@ -12,6 +12,7 @@
     <module>eureka-server</module>
     <module>simple-provider</module>
     <module>simple-consumer</module>
+    <module>simple-consumer-feign</module>
   </modules>
 
   <parent>

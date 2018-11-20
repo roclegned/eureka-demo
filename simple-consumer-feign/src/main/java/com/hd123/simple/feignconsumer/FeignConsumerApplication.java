@@ -1,16 +1,18 @@
-package com.hd123.simple.consumer;
+package com.hd123.simple.feignconsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 /**
- * 2018-11-20 - lp
+ * 2018-11-21 - lp
  */
-@EnableDiscoveryClient
 @SpringBootApplication
-public class ConsumerApplication {
+@EnableDiscoveryClient
+@EnableFeignClients
+public class FeignConsumerApplication {
   public static void main(String[] args) {
-    SpringApplication.run(ConsumerApplication.class, args);
+    SpringApplication.run(FeignConsumerApplication.class, args);
   }
 }
