@@ -1,6 +1,6 @@
-package com.hd123.simple.controller;
+package com.hd123.simple.provider.controller;
 
-import com.hd123.simple.entity.User;
+import com.hd123.simple.provider.entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

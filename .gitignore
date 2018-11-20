@@ -9,3 +9,4 @@ out
 gen
 /eureka-server/target/
 /simple-provider/target/
+/simple-consumer/target/

@@ -1,9 +1,9 @@
-package com.hd123.simple.entity;
+package com.hd123.simple.consumer.entiry;
 
 import lombok.Data;
 
 /**
- * 2018-11-19 - lp
+ * 2018-11-20 - lp
  */
 @Data
 public class User {
